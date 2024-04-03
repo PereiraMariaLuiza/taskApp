@@ -1,0 +1,190 @@
+@charset "UTF-8";
+div.container-fluid {
+  background-color: #87dfc2;
+  height: 100px;
+  padding-top: 50px;
+  box-shadow: 0px 1px 10px;
+  width: 100%;
+}
+
+input.btn.btn-login {
+  background-color: #bbefe1;
+  margin-left: 1500px;
+  width: 100px;
+}
+
+body > header > nav {
+  height: 1px;
+}
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#loginForm {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 200px;
+  background-color: #87dfc2;
+  padding: 100px;
+  padding-inline: 300px;
+  align-items: center;
+  border-radius: 30px;
+  box-shadow: 1px 1px 20px;
+}
+
+.btn.btn-primary {
+  width: 400px;
+  margin-top: 10px;
+  background-color: #bbefe1;
+  color: black;
+  border-style: none;
+}
+
+.btn.btn-primary:hover {
+  background-color: #a1e7d1;
+}
+
+#inputEmail3 {
+  width: 350px;
+}
+
+#inputPassword3 {
+  width: 350px;
+}
+
+#loginForm > div:nth-child(1) > label {
+  margin-left: -30px;
+}
+
+#loginForm > div:nth-child(2) > label {
+  margin-left: -30px;
+}
+
+#loginForm > div:nth-child(3) > div > div {
+  width: 400px;
+  margin-left: -115px;
+}
+
+h1 {
+  font-size: 60px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  margin-bottom: 70px;
+  color: white;
+}
+
+div#listAll {
+  background-color: #87dfc2;
+  margin-top: 150px;
+  width: 1500px;
+  padding: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 30px;
+  text-align: center;
+  box-shadow: 2px 2px 8px;
+}
+
+#inputTask {
+  margin-left: 30px;
+  margin-top: 30px;
+  border-style: none;
+  border-radius: 20px;
+  width: 500px;
+  height: 50px;
+  outline-style: none;
+  box-shadow: 1px 1px 5px;
+}
+
+#addTaskButton {
+  border: none;
+  border-radius: 50%;
+  background-color: #87dfc2;
+}
+
+ul#listTask {
+  list-style: none;
+}
+
+span {
+  font-size: 20px;
+}
+
+li#taskAdd {
+  display: flex;
+  justify-content: space-between;
+  width: 1300px;
+  margin-left: 15px;
+  margin-top: 30px;
+  background-color: #eeffff;
+  padding: 10px;
+  align-items: center;
+  border-radius: 30px;
+  box-shadow: 2px 2px 10px;
+}
+
+input#inputDate {
+  border-radius: 20px;
+  border-style: none;
+  height: 50px;
+  font-size: 20px;
+  padding: 10px;
+  box-shadow: 1px 1px 5px;
+}
+
+#taskContainer {
+  max-height: 5000px; /* Defina um limite de altura para a div */
+  overflow-y: auto; /* Adicione o scroll vertical quando necessário */
+}
+
+#cadFom > form {
+  margin-inline: 50px;
+}
+
+#cadFom {
+  display: flex;
+  width: 600px;
+  height: 500px;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #87dfc2;
+  margin-top: 100px;
+  border-radius: 30px;
+  box-shadow: 1px 1px 5px;
+  margin-top: 200px;
+}
+
+#validationServer03 {
+  width: 510px;
+}
+
+#validationServer01 {
+  width: 200px;
+}
+
+#validationServerUsername {
+  width: 200px;
+}
+
+#cadFom > form > div:nth-child(1) {
+  margin-right: 30px;
+}
+
+#cadFom > form > div:nth-child(2) > div {
+  width: 300px;
+}
+
+#cadFom > form > div:nth-child(4) > div {
+  margin-left: 150px;
+  margin-right: auto;
+}
+
+#cadFom > form > div:nth-child(5) > button {
+  margin-left: 50px;
+}/*# sourceMappingURL=style.css.map */

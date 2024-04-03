@@ -1,0 +1,56 @@
+
+#cadFom > form {
+  margin-inline: 50px;
+}
+
+#cadFom {
+  display: flex;
+  width: 600px;
+  height: 500px;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: $primaryColor;
+  margin-top: 100px;
+  border-radius: 30px;
+  box-shadow: 1px 1px 5px;
+  margin-top: 200px;
+}
+
+
+#validationServer03 {
+  width: 510px;
+}
+
+
+
+#validationServer01 {
+  width: 200px;
+  
+}
+
+
+
+#validationServerUsername {
+  width: 200px;
+
+}
+
+#cadFom > form > div:nth-child(1){
+  margin-right: 30px;
+}
+
+#cadFom > form > div:nth-child(2) > div {
+  width: 300px;
+  
+}
+
+#cadFom > form > div:nth-child(4) > div {
+  margin-left: 150px;
+  margin-right: auto;
+}
+
+#cadFom > form > div:nth-child(5) > button {
+  margin-left: 50px;
+}
