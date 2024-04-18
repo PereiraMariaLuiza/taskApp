@@ -91,3 +91,99 @@ document.addEventListener("DOMContentLoaded", function() {
       addTask();
   });
 });
+
+
+//Função de validação da criação de contas 
+function validateForm() {
+  var username = document.getElementById("validationServerUsername").value;
+  var email = document.getElementById("validationServer03").value;
+  var termsChecked = document.getElementById("invalidCheck3").checked;
+
+  // Verifica se o campo de nome de usuário está vazio
+  if (username.trim() === "") {
+    document.getElementById("validationServerUsernameFeedback").innerText = "Por favor, escolha um nome de usuário";
+    return false;
+  }
+
+  // Verifica se o campo de email está vazio
+  if (email.trim() === "") {
+    document.getElementById("validationServer03Feedback").innerText = "Por favor, insira um endereço de email";
+    return false;
+  }
+
+  // Verifica se os termos foram aceitos
+  if (!termsChecked) {
+    document.getElementById("invalidCheck3Feedback").innerText = "Você deve aceitar os termos de uso";
+    return false;
+  }
+
+  // Se todos os campos estiverem preenchidos e os termos foram aceitos, envie o formulário
+  alert("Formulário enviado com sucesso!");
+  return true;
+}
+
+
+
+// Função para exibir os Termos de Uso
+function exibirTermosDeUso() {
+  var termosDeUso = "Termos de Uso - Site de Lista de Tarefas\n\n" +
+      "1. Uso do Serviço:\n" +
+      "   Nosso site de lista de tarefas é destinado ao uso pessoal e não comercial. Você concorda em usar nossos serviços apenas para fins legais e de acordo com estes Termos de Uso.\n\n" +
+      "2. Registro:\n" +
+      "   Alguns recursos do nosso site podem exigir registro. Ao se registrar, você concorda em fornecer informações verdadeiras, precisas e atualizadas. Você é responsável por manter a confidencialidade de suas credenciais de login.\n\n" +
+      "3. Privacidade:\n" +
+      "   Respeitamos a sua privacidade. Ao usar nosso site, você concorda com nossa Política de Privacidade, que descreve como coletamos, usamos e divulgamos suas informações.\n\n" +
+      "4. Conteúdo do Usuário:\n" +
+      "   Você é o único responsável por todo o conteúdo que você cria, publica, exibe ou compartilha em nosso site. Ao enviar conteúdo, você nos concede uma licença mundial, não exclusiva, livre de royalties, para usar, modificar, exibir e distribuir esse conteúdo em conexão com a operação do nosso site.\n\n";
+
+confirm(termosDeUso);
+  
+}
+
+
+//função para o menu interativo
+
+class MobileNavbar {
+  constructor(mobileMenu, navList, navLinks,){
+    this.mobileMenu = document.querySelector(mobileMenu);
+    this.navList = document.querySelector(navList);
+    this.navLinks = document.querySelectorAll(navLinks);
+    this.activeClass = "active";
+
+    this.handleClick = this.handleClick.bind(this)
+  }
+
+  animateLinks() {
+    this.navLinks.forEach((link, index) => {
+      link.style.animation
+      ? (link.style.animation = "")
+      : (link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.3}s`);
+    });
+  }
+
+  handleClick(){
+    this.navList.classList.toggle(this.activeClass);
+    this.mobileMenu.classList.toggle(this.activeClass);
+    this.animateLinks();
+  }
+
+  addClickEvent() {
+    this.mobileMenu.addEventListener("click", this.handleClick);
+  }
+
+  init(){
+    if(this.mobileMenu){
+      this.addClickEvent();
+    }
+    return this;
+  }
+}
+
+const mobileNavbar = new MobileNavbar(
+  ".mobile-menu",
+  ".nav-list",
+  ".nav-list li",
+);
+
+mobileNavbar.init()
+

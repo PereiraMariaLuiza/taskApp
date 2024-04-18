@@ -54,3 +54,11 @@
 #cadFom > form > div:nth-child(5) > button {
   margin-left: 50px;
 }
+
+#termosDeUsoButton {
+  border-style: none;
+  color: blue;
+  text-decoration: underline;
+  background-color: $primaryColor;
+  
+}

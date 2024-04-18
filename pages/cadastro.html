@@ -21,7 +21,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="../pages/index.html">Pagina Principal</a>
+              <a class="nav-link active" aria-current="page" href="../pages/index.html">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Sobre</a>
@@ -64,7 +64,8 @@
           Aceito os termos de uso
         </label>
         <div id="invalidCheck3Feedback" class="invalid-feedback">
-          Você deve aceitar os <a href="#">termos</a>
+          Você deve aceitar os
+          <button id="termosDeUsoButton" onclick="exibirTermosDeUso()">termos de uso</button>
         </div>
       </div>
     </div>
@@ -73,35 +74,6 @@
     </div>
   </form>
 </div>
-
-<script>
-  function validateForm() {
-    var username = document.getElementById("validationServerUsername").value;
-    var email = document.getElementById("validationServer03").value;
-    var termsChecked = document.getElementById("invalidCheck3").checked;
-
-    // Verifica se o campo de nome de usuário está vazio
-    if (username.trim() === "") {
-      document.getElementById("validationServerUsernameFeedback").innerText = "Por favor, escolha um nome de usuário";
-      return false;
-    }
-
-    // Verifica se o campo de email está vazio
-    if (email.trim() === "") {
-      document.getElementById("validationServer03Feedback").innerText = "Por favor, insira um endereço de email";
-      return false;
-    }
-
-    // Verifica se os termos foram aceitos
-    if (!termsChecked) {
-      document.getElementById("invalidCheck3Feedback").innerText = "Você deve aceitar os termos de uso";
-      return false;
-    }
-
-    // Se todos os campos estiverem preenchidos e os termos foram aceitos, envie o formulário
-    alert("Formulário enviado com sucesso!");
-    return true;
-  }
-</script>
+<script src="../script/script.js"></script>
 </body>
 </html>
